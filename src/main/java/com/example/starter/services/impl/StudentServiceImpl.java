@@ -53,7 +53,7 @@ public class StudentServiceImpl implements IStudentService {
     @Override
     public List<DtoStudent> getAllStudents(){
         List<DtoStudent> dtoList = new ArrayList<>();
-        List<Student> studentList = studentRepository.findAll();
+        List<Student> studentList = studentRepository.findAllStudent2();
 
         for (Student student : studentList){
             DtoStudent dto = new DtoStudent();
